@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 
-class Lyrics extends Component {
-  constructor() {
-    super();
-  }
-  
-  render () {
-    return (
+const Lyrics = props => {
+  return (
       <div className="Lyrics">
-          <p>These are song lyrics</p>
+          {props.lyrics}
       </div>
-    );
-  }
+  );
 }
 
 export default Lyrics;
