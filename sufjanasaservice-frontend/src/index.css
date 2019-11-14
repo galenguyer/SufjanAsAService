@@ -1,10 +1,27 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  text-align: center;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.nav-item {
+  padding: 10px;
+  margin-left: 5px;
+  color: black;
+}
+.nav-item:hover {
+  background-color: whitesmoke;
+  text-decoration: underline;
+  -moz-text-decoration-color: black; /* Code for Firefox */
+  text-decoration-color: black;
 }
 
 code {
