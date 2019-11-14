@@ -1,4 +1,5 @@
 import React from 'react';
+import './Lyrics.css'
 
 const Lyrics = props => {
   return (
