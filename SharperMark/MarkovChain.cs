@@ -36,7 +36,7 @@ namespace SharperMark
         {
             foreach(string inputString in input)
             {
-                var words = inputString.Split().Where(w => !string.IsNullOrEmpty(w)).ToArray();
+                var words = inputString.Replace("(", string.Empty).Replace(")", string.Empty).Split().Where(w => !string.IsNullOrEmpty(w)).ToArray();
                 if (words.Length == 0)
                     continue;
 
