@@ -31,6 +31,7 @@ class App extends Component {
         return (
             <jsxFragment>
                 <Header title={this.state.title} />
+                <hr style={{width: "60vw"}} />
                 <Lyrics lyrics={this.state.lyrics} />
             </jsxFragment>
         )
