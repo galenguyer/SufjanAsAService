@@ -8,7 +8,7 @@ class App extends Component {
         super();
         this.state = {
             lyrics: [ "" ],
-            title: "Sufjo is Saddo",
+            title: "",
         }
     }
 
@@ -23,7 +23,7 @@ class App extends Component {
                 lines.push(<p>{item}</p>)
             });
 
-            this.setState({lyrics: lines, title: "Sufjo is Saddo"})
+            this.setState({lyrics: lines, title: lines[Math.floor(Math.random()*lines.length)]})
         });
     }
 
