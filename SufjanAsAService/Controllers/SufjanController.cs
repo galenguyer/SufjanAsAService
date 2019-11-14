@@ -21,7 +21,12 @@ namespace SufjanAsAService.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Hi!";
+            List<string> Lyrics = new List<string>();
+            for(int i = 0; i < Program.markovChain.GenerateSentence().Length * 2; i++)
+            {
+                Lyrics.Add(Program.markovChain.GenerateSentence());
+            }
+            return String.Join("\n", Lyrics);
         }
     }
 }
