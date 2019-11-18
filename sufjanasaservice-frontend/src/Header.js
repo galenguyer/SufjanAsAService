@@ -4,7 +4,7 @@ const Header = props => {
     return (
         <header>
             <h1>{props.title}</h1>
-            <h5>A Sad Song by Sufjan (as a Service) Stevens</h5>
+            <h5>An Ephemeral, Sad Song by Sufjan (as a Service) Stevens</h5>
         </header>
     );
 }

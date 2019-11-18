@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Lyrics from './Lyrics';
+import './App.css'
 
 class App extends Component {
     constructor() {
@@ -32,6 +33,11 @@ class App extends Component {
                 <Header title={this.state.title} />
                 <hr style={{width: "60vw"}} />
                 <Lyrics lyrics={this.state.lyrics} />
+                <div id="buttonDiv">
+                    <button type="button" class="btn btn-light" onClick={() => this.componentDidMount()}>
+                        Don't like it? Forget this one forever and get a new one.
+                    </button>
+                </div>
             </jsxFragment>
         )
     }
