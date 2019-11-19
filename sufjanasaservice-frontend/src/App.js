@@ -29,7 +29,7 @@ class App extends Component {
 
     render() {
         return (
-            <jsxFragment>
+            <>
                 <Header title={this.state.title} />
                 <hr style={{width: "60vw"}} />
                 <Lyrics lyrics={this.state.lyrics} />
@@ -38,7 +38,7 @@ class App extends Component {
                         Don't like it? Forget this one forever and get a new one.
                     </button>
                 </div>
-            </jsxFragment>
+            </>
         )
     }
 }
