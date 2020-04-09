@@ -26,7 +26,7 @@ namespace SufjanAsAService
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>()
-                    .UseUrls("http://localhost:10283");
+                    .UseUrls("http://0.0.0.0:10283");
                 });
     }
 }
