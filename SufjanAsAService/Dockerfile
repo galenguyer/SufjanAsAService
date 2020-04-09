@@ -18,4 +18,5 @@ RUN dotnet publish "SufjanAsAService.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+COPY "SufjanAsAService/input.txt" .
 ENTRYPOINT ["dotnet", "SufjanAsAService.dll"]
