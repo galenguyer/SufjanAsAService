@@ -13,7 +13,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        fetch("https://mastrchef.rocks/api/sufjan")
+        fetch("https://galenguyer.com/api/sufjan")
         .then(result => {
             return result.text();    
         })
