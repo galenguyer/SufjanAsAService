@@ -8,5 +8,4 @@ set -o errexit
 set -o nounset
 
 cd SufjanAsAService
-docker build -f Dockerfile -t docker.galenguyer.com/chef/sufjanasaservice:latest -t sufjanasaservice:latest ..
-docker push docker.galenguyer.com/chef/sufjanasaservice:latest
+docker build -f Dockerfile -t sufjan-backend:latest ..
